@@ -12,7 +12,7 @@ import org.json.simple.parser.JSONParser;
 import com.opencsv.CSVReader;
 
 public class HandleFiles {
-	//Konstruktor tar emot värde av fil som ska "läsas, hanteras & presenteras"
+	
 		public List<Product> ParseFile (String fileFormat) {
 			List <Product> products = null;
 		
