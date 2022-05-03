@@ -21,12 +21,7 @@
     </plugins>
 </build>
 <dependencies>
-		<dependency>
-		   <groupId>xerces</groupId>
-		   <artifactId>xercesImpl</artifactId>
-		   <version>2.10.0</version>
-		</dependency>
-		<dependency>
+<dependency>
 			<groupId>org.ogce</groupId>
 			<artifactId>xpp3</artifactId>
 			<version>1.1.6</version>
@@ -35,6 +30,12 @@
 			<groupId>de.julielab</groupId>
 			<artifactId>xercesImpl</artifactId>
 			<version>2.11.0.1</version>
+			<exclusions>
+       			 <exclusion>
+            		<groupId>xml-apis</groupId>
+            		<artifactId>xml-apis</artifactId>
+        		</exclusion>
+    		</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.graalvm.compiler</groupId>
@@ -44,7 +45,7 @@
 		<dependency>
 		    <groupId>com.googlecode.json-simple</groupId>
 		    <artifactId>json-simple</artifactId>
-		    <version>1.1.1</version>
+		    <version>1.1.1</version>	
 		</dependency>
 		<dependency>
 		    <groupId>org.json</groupId>
@@ -61,10 +62,5 @@
 		      <artifactId>opencsv</artifactId>
 		      <version>5.3</version>
 		  </dependency>
-		<dependency>
-		    <groupId>javax.xml</groupId>
-		    <artifactId>jaxp-api</artifactId>
-		    <version>1.4</version>
-		</dependency>
 	</dependencies>
 </project>
