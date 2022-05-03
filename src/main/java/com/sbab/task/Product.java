@@ -1,6 +1,7 @@
 package com.sbab.task;
 
 public class Product {
+	
 	private String type;
 	private String size;
 	private String brand;

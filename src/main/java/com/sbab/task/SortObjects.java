@@ -7,6 +7,7 @@ import java.util.List;
 
 public class SortObjects {
 	
+	//Sorts list of products in descending order (xs-l)
 	public List<Product> sortBySize(ArrayList<Product> productList){
 		
 		Comparator<Product> compareBySize = new Comparator<Product>() {
