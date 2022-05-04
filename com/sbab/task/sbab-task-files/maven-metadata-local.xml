@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sbab.task</groupId>
+  <artifactId>sbab-task-files</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20220504075546</lastUpdated>
+  </versioning>
+</metadata>
