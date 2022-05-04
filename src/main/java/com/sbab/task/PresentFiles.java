@@ -5,26 +5,21 @@ import java.util.List;
 
 public class PresentFiles {
 
-	/*Calls the parsers for each file type 
-	* Presents data from each file 
+	/* Reads the list of objects
+	*  Presents data from each file in order 
 	*/
-	public static void printFile(String answer) {
-		
-		System.out.println("\n Program opens clothes."+ answer);
-		
+	public static void printFile(List<Product> productListIn) {
+				
 		String type = null;
 		String size = null;
 		String brand = null;
 		String color = null;
-		String headers= null;
-		ArrayList<Product> ProductList;
+		String headers= null;		
 		
-		HandleFiles handleFile = new HandleFiles();
-		ProductList = new ArrayList<Product>(handleFile.ParseFile(answer));
 		
 		SortObjects sortObjects = new SortObjects();
 		
-	    List<Product>sortedBySize = sortObjects.sortBySize(ProductList);
+	    List<Product>sortedBySize = sortObjects.sortBySize(productListIn);
 	    List<Product>sizeXlList = new ArrayList<Product>();
 		
 		try {
